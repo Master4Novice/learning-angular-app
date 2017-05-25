@@ -1,0 +1,9 @@
+<div *ngIf="event">
+      <h2>{{event.eventName}} details!</h2>
+      <div><label>Event Id: </label>{{event.eventId}}</div>
+      <div>
+        <label>Event Name: </label>
+        <input [(ngModel)]="event.eventName" placeholder="Enter Event Name"/>
+      </div>
+      <button (click)="goBack()">Back</button>
+</div>
